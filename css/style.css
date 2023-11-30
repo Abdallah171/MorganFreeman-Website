@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* ================NAV======================= */
+
+nav {
+}
+
+#navbar a {
+  color: rgb(255, 255, 255);
+  padding: 17px;
+}
+
+#navbar .dropdown .dropdown a {
+  color: #0062d3;
+}
+
+nav .container .navbar-brand a {
+  font-size: 90px;
+  background-color: aqua;
+}
+
+#navbarNav li a {
+  position: relative;
+}
+
+#navbarNav li a:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -1px;
+  left: 20px;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+#navbarNav li a:hover::before {
+  width: 55%;
+}
+
+/* =================HOME=================== */
+
+#home {
+  background-image: url(../images/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#home .lyr-black {
+  background-color: rgba(0, 0, 0, 0.599);
+}
+
+#home h1 {
+  font-size: 72px;
+  color: white;
+}
+
+#home p {
+  font-size: 40px;
+  color: white;
+}
+
+/* =================ABOUT=================== */
+
+#about {
+  background-color: #eeeeee;
+}
+
+#about .container {
+  padding: 50px;
+}
+
+#about .container .about-box .about-img img {
+  width: 100%;
+}
+
+#about .about-right {
+}
+
+#about .about-right h5 {
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#about .about-right h5::before {
+  content: "";
+  background-color: blue;
+  width: 17%;
+  height: 4px;
+  color: blue;
+  position: absolute;
+  top: 100%;
+}
+
+#about .about-right p {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 0px 16px;
+  font-weight: 300;
+  vertical-align: baselinel;
+}
+
+/* ===================SERVICES================ */
+
+#services {
+  background: #eeee;
+}
+
+#services .title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#services .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+}
+
+#services .service-box {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: #000000 0px 13px 8px -16px;
+  color: #4e4e4e;
+  line-height: 24px;
+  margin: 0px 0px 48px;
+  padding: 40px 20.8px;
+  text-align: center;
+}
+
+.service-box .ico-circle i {
+  line-height: 0;
+  font-size: 35px;
+}
+
+#services .service-box .ico-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  line-height: 1.55;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 0 10px #0078ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#services .service-box:hover .ico-circle {
+  background-color: #0078ff;
+  box-shadow: 0 0 0 10px #cde1f8;
+  color: white;
+}
+
+/* ======================SERVICES==================== */
+
+#counter {
+  background-image: url(../images/counters-bg.jpg);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding-block: 8rem;
+}
+
+#counter .overlay-mf {
+  background-color: #0078ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+#counter .counter-ico {
+  margin-bottom: 1rem;
+}
+
+#counter .counter-ico .ico-circle i {
+  font-size: 2rem;
+}
+
+#counter .counter-ico .ico-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: #cde1f8 0px 0px 0px 10px;
+  font-size: 32px;
+  grid-area: auto;
+  line-height: 48px;
+  margin: 0px 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#counter .counter-text {
+  line-height: 24px;
+}
+
+#counter .counter-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#counter .counter-num p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+/* ===================PORTFOLIO================ */
+
+#portfolio .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+  box-shadow: #000000 0px 13px 8px -16px;
+}
+
+#portfolio .title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#portfolio .card {
+  box-shadow: #000000 0px 13px 8px -16px;
+}
+
+#portfolio .card-img {
+  overflow: hidden;
+}
+
+#portfolio .card:hover img {
+  transition: all 1s ease-in-out;
+}
+
+#portfolio .card:hover img {
+  scale: 1.3;
+}
+
+#portfolio .card .my-icon span {
+  color: #0078ff;
+  display: inline;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+#portfolio .card h2 {
+  color: rgb(30 30 30);
+  font-family: system-ui;
+  font-size: 19.2px;
+  font-weight: 500;
+  line-height: 23.04px;
+  margin: 0px 0px 8px;
+}
+
+#portfolio .card .caption-2 {
+  font-size: 12.8px;
+}
+
+#portfolio .card .w-more span {
+  font-size: 12.8px;
+}
+
+/* ===================== SWIPE======================= */
+
+#swipe {
+  background-image: url(../images/overlay-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  padding: 8rem 0;
+  margin-top: 50px;
+}
+
+#swipe .overlay-mf {
+  background-color: #0078ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+/* =====================BLOG========================== */
+
+#blog .line {
+  width: 40px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 auto;
+  box-shadow: #000000 0px 13px 8px -16px;
+}
+
+#blog .container .title-box .title {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#blog .card-body .category-box {
+  position: absolute;
+  color: #eeeeee;
+  text-align: center;
+  top: -16px;
+  left: 15px;
+  right: 15px;
+}
+
+#blog .card-body .category-box span {
+  background-color: #0078ff;
+  padding: 0 15px 5px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+#blog a {
+  text-decoration: none;
+  color: #000000;
+}
+
+/* =========================CONTACT==================== */
+
+#contact {
+  background-image: url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#contact .overlay-mf {
+  background-color: #0078ff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+}
+
+#contact h5 {
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#contact h5::before {
+  content: "";
+  background-color: blue;
+  width: 17%;
+  height: 4px;
+  color: blue;
+  position: absolute;
+  top: 100%;
+}
+
+#contact .contact-right p {
+  margin: 0px 0px 16px;
+  font-weight: 300;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+#contact .list-ico {
+  line-height: 2;
+}
+
+#contact .socials a:hover span {
+  background-color: #0078ff;
+}
+
+#contact .socials .ico-circle i {
+  color: black;
+}
+
+#contact .ico-circle:hover i {
+  color: rgb(255, 255, 255);
+}
+
+#contact .socials .ico-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #0078ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#contact .socials a:hover span {
+  box-shadow: 0 0 0 4px #5a5d60;
+}
+
+#contact button[type="submit"] {
+  background: #0078ff;
+  border: 0;
+  padding: 10px 24px;
+  color: #ffffff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #3393ff;
+}
+
+#contact button:hover {
+  text-decoration: none;
+  box-shadow: 0 0 0 4px #cde1f8;
+  background: #cde1f8;
+}
+
+/* ==========================FOOTER========================= */
+
+footer {
+  text-align: center;
+  color: #fff;
+  padding: 25px 0;
+  background: #0062d3;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
